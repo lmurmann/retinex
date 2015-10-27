@@ -12,8 +12,8 @@ system. The system is solved using Eigen.
 
 ## Example results
 
-Input
+### Input
 ![inputt](https://raw.github.com/lmurmann/retinex/master/img/input.jpg)
 
-Reflectance
+### Reflectance
 ![reflectance](https://raw.github.com/lmurmann/retinex/master/img/reflectance.jpg)

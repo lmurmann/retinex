@@ -10,7 +10,6 @@ int main(int argc, char* argv[])
 {
 	cv::Mat input = cv::imread("img/input.ppm", CV_LOAD_IMAGE_ANYDEPTH |CV_LOAD_IMAGE_COLOR);
 	input.convertTo(input, CV_32FC3, 1.0 / USHRT_MAX);
-	cv::resize(input, input, cv::Size(), 0.5, 0.5);
 
 	int w = input.cols;
 	int h = input.rows;
