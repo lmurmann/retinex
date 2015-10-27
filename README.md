@@ -9,3 +9,11 @@ system. The system is solved using Eigen.
 
  - Eigen for sparse linear solve
  - For imread: OpenCV
+
+## Example results
+
+Input
+![inputt](https://raw.github.com/lmurmann/retinex/master/img/input.jpg)
+
+Reflectance
+![reflectance](https://raw.github.com/lmurmann/retinex/master/img/reflectance.jpg)

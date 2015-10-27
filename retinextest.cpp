@@ -8,7 +8,7 @@ const float threshold = 0.13;
 
 int main(int argc, char* argv[])
 {
-	cv::Mat input = cv::imread("input.ppm", CV_LOAD_IMAGE_ANYDEPTH |CV_LOAD_IMAGE_COLOR);
+	cv::Mat input = cv::imread("img/input.ppm", CV_LOAD_IMAGE_ANYDEPTH |CV_LOAD_IMAGE_COLOR);
 	input.convertTo(input, CV_32FC3, 1.0 / USHRT_MAX);
 	cv::resize(input, input, cv::Size(), 0.5, 0.5);
 
@@ -23,8 +23,6 @@ int main(int argc, char* argv[])
 	cv::imshow("shading", shading);
 	cv::imshow("reflectance", reflectance);
 	cv::waitKey(0);
-	reflectance.convertTo(reflectance, CV_16UC3, USHRT_MAX);
-	cv::imwrite("reflectance.ppm", reflectance);
 	return 0;
 }
 
